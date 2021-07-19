@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        gap: 5%;
+      }
+      img {
+        width: 30%;
+      }
+      #priceShow {
+        width: 150px;
+        height: 50px;
+        border: 1px solid black;
+      }
+      #container div {
+        border: 1px solid black;
+        justify-items: center;
+        text-align: center;
+        border-radius: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="text" placeholder="Enter Coupon" id="promo" />
+      <button onclick="promo()">Apply Coupon</button>
+      <button onclick="check()">checkout</button>
+      <div style="float: right">
+        <p>Total Amount</p>
+        <div id="priceShow"></div>
+      </div>
+    </div>
+    <div id="container"></div>
+  </body>
+</html>
+<script src="cart.js"></script>
